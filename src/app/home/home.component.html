@@ -1,0 +1,10 @@
+<div class="home">
+    <div class="file">
+        <div class="file__container" *ngFor="let file of filesList; trackBy:trackByFn">
+            <video controls class="video" *ngIf="getContentType(file.fileContentType) ==='video'">
+                <source [src]="file.fileUrl" [type]="file.fileContentType">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+    </div>
+</div>

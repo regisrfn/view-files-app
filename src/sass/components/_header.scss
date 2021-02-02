@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     &.scrollClass {
-        background-color: $green-accent-4;
+        background-color: $grey-darken-4;
         .logo {
             height: 5.5rem;
             width: 5.5rem;
@@ -17,7 +17,7 @@
         padding-right: 2rem;
         padding-left: 2rem;
     }
-    background-color: rgba($green-darken-1, $alpha: 1);
+    background-color: $black;
     display: flex;
     justify-content: space-between;
     align-items: center;
