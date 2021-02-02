@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "file-management"
+  "defaultProject": "file-management",
+  "cli": {
+    "analytics": "2acd5db9-846f-4047-b45f-224d6c40b30f"
+  }
 }
