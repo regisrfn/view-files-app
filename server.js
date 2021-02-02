@@ -14,7 +14,7 @@ app.use(cors())
 app.use(history())
 
 /* eslint-disable*/
-app.use(serveStatic(__dirname + '/dist/OrderManagement'))
+app.use(serveStatic(__dirname + '/dist/file-management'))
 
 var port = process.env.PORT || 4200
 app.listen(port)
