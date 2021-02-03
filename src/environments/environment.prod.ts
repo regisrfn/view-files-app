@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiFile: "http://rufino-file-api.sa-east-1.elasticbeanstalk.com/api/v1"
+  apiFile: "http://awseb-e-k-awsebloa-douhc0wldsn0-870396845.sa-east-1.elb.amazonaws.com/api/v1"
 };
