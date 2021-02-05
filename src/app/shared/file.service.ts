@@ -12,4 +12,8 @@ export class FileService {
   getFilesList() {
     return this.http.get(environment.apiFile + "/file").toPromise()
   }
+
+  getPage(pageNumber: number, pageSize = 10) {
+    return this.http.get(`${environment.apiFile}/page?number=${pageNumber}&size=${pageSize}`).toPromise();
+  }
 }
