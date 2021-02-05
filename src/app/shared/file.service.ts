@@ -10,6 +10,6 @@ export class FileService {
   constructor(private http: HttpClient) { }
 
   getFilesList() {
-    return this.http.get(environment.apiFile + "/uploads").toPromise()
+    return this.http.get(environment.apiFile + "/file").toPromise()
   }
 }
