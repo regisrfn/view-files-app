@@ -13,16 +13,16 @@
         &__container {
             background-color: $red-accent-4;
             display: flex;
-            margin-bottom: 1rem;          
+            margin-bottom: 1rem;
+            margin-right: 1rem;
 
             h3 {
                 color: $white;
                 font-size: 3rem;
                 font-weight: bolder;
             }
-            &:not(:last-child) {
-                margin-right: 1rem;
-            }
+            
+
             video {
                 max-width: 30rem;
                 @media only screen and (max-width: $SMALL-DEV) {
