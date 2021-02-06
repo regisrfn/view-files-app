@@ -37,17 +37,17 @@ export class HomeComponent implements OnInit {
   }
 
   nextPage() {    
-    this.router.navigate([`orders/${this.page.pageNumber+1}`])
+    this.router.navigate([`page/${this.page.pageNumber+1}`])
     this.setFilesList(this.page.pageNumber+1)
   }
 
   previousPage() {    
-    this.router.navigate([`orders/${this.page.pageNumber-1}`])
+    this.router.navigate([`page/${this.page.pageNumber-1}`])
     this.setFilesList(this.page.pageNumber-1)
   }
 
-  trackByFn(index: any, item: any) {
-    return index
+  trackByFn(index: any, item: File) {
+    return item.fileId
   }
 
 }
