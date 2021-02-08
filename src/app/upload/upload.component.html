@@ -1,0 +1,7 @@
+<div class="upload">
+    <div class="container">
+        <span>Upload your Files</span>
+        <input #upload name="upload" type="file" multiple class="upload__file" (change)="selectFiles(upload)">
+        <button (click)="uploadFiles()">Submit</button>
+    </div>    
+</div>

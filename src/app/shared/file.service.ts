@@ -16,4 +16,8 @@ export class FileService {
   getPage(pageNumber: number, pageSize = 10) {
     return this.http.get(`${environment.apiFile}/page?number=${pageNumber}&size=${pageSize}`).toPromise();
   }
+
+  saveFile(data: FormData) {
+    return this.http.post(`${environment.apiFile}/savelist`, data).toPromise()
+  }
 }
